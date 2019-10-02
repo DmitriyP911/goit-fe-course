@@ -12,18 +12,47 @@ html{
     background-color: white;
 }
 
-.siteNavigation li:not(:last-child) {
-    margin-right: 120px;
+.page-nav {
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 76px;
+    margin-bottom: 100px; 
+}
+
+.siteNavigation li:nth-child(1) {
+    margin-left: 160px;
+    margin-right: 125px;
+}
+
+.siteNavigation li:nth-child(2) {
+    margin-left: 0;
+    margin-right: 102px;
+}
+
+.siteNavigation li:nth-child(3) {
+    margin-left: 0;
+    margin-right: 93px;
+}
+
+.siteNavigation li:nth-child(4) {
+    margin-left: 0;
+    margin-right: 156px;
 }
 
 .siteNavigation li{
     display: inline-block;
-    font-style: normal
+    font-style: normal;
 }
 
 .siteNavigation a {
+    color: #626262;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.siteNavigation a:hover,
+.siteNavigation a:focus {
+    color: blue;
 }
 
 .siteNavigation {
@@ -31,4 +60,53 @@ html{
     padding: 0;
     list-style: none;
     font-size: 14px;
+}
+
+/*features list item*/
+
+.features-list {
+    font-size: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.features-list-item {
+    padding: 0;
+    display: inline-block;
+    margin-right: 59px;
+    width: 421px;
+    font-size: 30px;
+    margin-bottom: 116px;
+}
+
+.features-list-item p {
+    font-size: 14px;
+    color: #626262;
+    margin-top: 0;
+}
+
+.features-list-item h3 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+.features-list-item img {
+    margin-bottom: 27px;
+    font-size: 0;
+}
+
+.features-list-item h5 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #b4ad9e;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.features-list-item:nth-child(2n) {
+    margin-right: 0;
 }
