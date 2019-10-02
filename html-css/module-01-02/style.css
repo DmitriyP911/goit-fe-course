@@ -20,23 +20,23 @@ html{
 }
 
 .siteNavigation li:nth-child(1) {
-    margin-left: 160px;
-    margin-right: 125px;
+    margin-left: 163px;
+    margin-right: 120px;
 }
 
 .siteNavigation li:nth-child(2) {
     margin-left: 0;
-    margin-right: 102px;
+    margin-right: 100px;
 }
 
 .siteNavigation li:nth-child(3) {
     margin-left: 0;
-    margin-right: 93px;
+    margin-right: 92px;
 }
 
 .siteNavigation li:nth-child(4) {
     margin-left: 0;
-    margin-right: 156px;
+    margin-right: 161px;
 }
 
 .siteNavigation li{
