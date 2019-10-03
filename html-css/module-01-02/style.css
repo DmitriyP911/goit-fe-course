@@ -110,3 +110,41 @@ html{
 .features-list-item:nth-child(2n) {
     margin-right: 0;
 }
+
+button {
+    position: relative;
+    color: black;
+    font-size: 135%;
+    font-weight: 0;
+    text-decoration: none;
+    padding: .25em .5em;
+  }
+
+  .wrap{
+    position:relative;
+    width:300px;
+    height:225px;
+  }
+
+  .button {
+    width: 901px;
+    margin: 0 auto;
+    background-color: white;
+    width: 161px;
+    height: 64px;
+    margin-bottom: 70px;
+  }
+
+  .button-board{
+    position:absolute;
+    width:160px;
+    height: 65px;
+  }
+   
+  .button-text{
+    position:center;
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
