@@ -64,7 +64,7 @@ html{
     margin-right: 59px;
     width: 421px;
     font-size: 30px;
-    margin-bottom: 116px;
+    /* margin-bottom: 116px; */
 }
 
 .features-list-item p {
@@ -113,6 +113,7 @@ button {
     outline-color: black;
     outline-style: solid;
     border: none;
+    margin-top: 45px;
     padding-top: 21px;
     padding-bottom: 21px;
     padding-left: 34px;
