@@ -59,6 +59,7 @@ html{
 }
 
 .features-list-item {
+    vertical-align: top;
     padding: 0;
     display: inline-block;
     margin-right: 59px;
@@ -69,8 +70,7 @@ html{
 
 .features-list-item p {
     display: inline-block;
-    text-align: left;
-    vertical-align: top;
+    text-align: left;   
     font-size: 14px;
     color: #626262;
     margin-top: 0;
