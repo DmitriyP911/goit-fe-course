@@ -70,7 +70,6 @@ html{
 .features-list-item p {
     display: inline-block;
     text-align: left;
-    vertical-align: top;
     font-size: 14px;
     color: #626262;
     margin-top: 0;
