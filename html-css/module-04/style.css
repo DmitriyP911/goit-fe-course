@@ -1,0 +1,42 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before,
+::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 1647px;
+    margin: 0 auto;
+    background-color: white;
+    list-style-type: none;
+}
+
+.featured-list,
+.navigation-list {
+    list-style-type: none;
+}
+
+ .site-navigation a {
+     display: block;
+     text-transform: uppercase;
+     text-decoration: none;
+ }
+
+ .site-navigation li {
+     display: inline-block;
+ }

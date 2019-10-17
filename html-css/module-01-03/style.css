@@ -59,12 +59,12 @@ html{
 }
 
 .features-list-item {
+    vertical-align: top;
     padding: 0;
     display: inline-block;
     margin-right: 59px;
     width: 421px;
     font-size: 30px;
-    /* margin-bottom: 116px; */
 }
 
 .features-list-item p {
