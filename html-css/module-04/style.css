@@ -60,7 +60,7 @@ img {
 .first-title h2 {
     text-align: center;
     color: #515151;
-    font-family: "Roboto - Black";
+    font-family: "Roboto - Black", sans-serif;
     font-size: 48px;
     font-weight: 400;
     text-transform: uppercase;
@@ -113,8 +113,7 @@ img {
     list-style-type: none;
 }
 
-
-.product-list img {
+.featured-list .product-list img {
     line-height: 0;
     text-align: center;
 }
@@ -122,7 +121,8 @@ img {
 .product-list .product-name {
     float: left;
     margin: 0;
-    width: 202px;
+    padding-left: 14px;
+    width: 188px;
     background-color: #323232;
     color: #ffffff;
     font-family: "Roboto - Black";
@@ -132,18 +132,68 @@ img {
     text-transform: uppercase;
 }
 
+.product-list .product-name:hover {
+    background-color: #1abc9c;
+}
+
+.product-list .product-name:focus {
+    background-color: #1abc9c;
+}
+
 .product-list .product-price {
     float: right;
     margin: 0;
-    width: 54px;
+    width: 42px;
+    padding-left: 12px;
     color: #ffffff;
     font-family: "Roboto - Black";
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
-    text-align: center;
     text-transform: uppercase;
     background-color: grey;
+}
+
+.product-list .product-price:hover {
+    background-color: #1abc9c;
+    opacity: 0.44;
+}
+
+.product-list .product-price:focus {
+    background-color: #1abc9c;
+    opacity: 0.44;
+}
+
+.product-list .first p {
+    margin-top: 20px;
+}
+
+.product-list .second p {
+    margin-top: 18px;
+}
+
+.product-list .third p {
+    margin-top: 57px;
+}
+
+.product-list .forth p {
+    margin-top: 34px;
+}
+
+.product-list .fifth p {
+    margin-top: 58px;
+}
+
+.product-list .six p {
+    margin-top: 53px;
+}
+
+.product-list .seven p {
+    margin-top: 20px;
+}
+
+.product-list .eight p {
+    margin-top: 89px;
 }
 
 .product-list li {
@@ -178,43 +228,52 @@ img {
 .picture2 {
     box-sizing: content-box; 
     width: 176px;
-    height: 246px; 
+    height: 246px;
+    padding: 22px 43px 0 46px;
 }
 
 .picture3 {
     width: 229px;
     height: 158px;
+    padding: 71px 13px 0 13px;
 }
 
 .picture4 {
     width: 240px;
     height: 204px;
+    padding: 48px 8px 0 7px;
 }
 
 .picture5 {
     width: 198px;
     height: 213px;
+    padding: 13px 25px 0 32px;
 }
 
 .picture6 {
     width: 254px;
     height: 180px;
+    padding: 51px 1px 0 0;
 }
 
 .picture7 {
     width: 196px;
     height: 240px;
+    padding: 24px 27px 0 32px;
 }
 
 .picture8 {
     width: 234px;
     height: 98px;
+    padding: 97px 8px 0 13px;
 }
 
 .second-title h2 {
+    margin: 0;
+    padding-top: 105px;
     text-align: center;
     color: #515151;
-    font-family: "Roboto - Black";
+    font-family: "Roboto - Black", sans-serif;
     font-size: 48px;
     font-weight: 400;
     text-transform: uppercase;
@@ -238,7 +297,7 @@ img {
 }
 
 .latest-news {
-    padding-top: 84px;
+    padding-top: 110px;
 }
 
 .latest-news section {
@@ -260,6 +319,11 @@ img {
     margin: 0;
     margin-top: 30px;
     padding-bottom: 16px;
+    color: #555252;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .latest-news .news-cards h5 {
