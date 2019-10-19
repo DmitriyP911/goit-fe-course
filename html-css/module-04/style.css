@@ -1,5 +1,5 @@
 html{
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 *, *::before,
@@ -37,21 +37,50 @@ img {
 
 .navigation-list {
     padding-left: 0;
-    margin-left: 567px;
+    margin-left: 646px;
     width: 467px;
 }
 
-.first-title {
-    margin-bottom: 0;
-    text-align: center;
-    font-family: "open sans";
+.navigation-list a {
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
-    font-size: 48px;
-    line-height: 40px;
+    line-height: 11px;
+}
+
+.navigation-list a:hover {
+    color: #1abc9c;
+}
+
+.navigation-list a:focus {
+    color: #1abc9c;
+}
+
+.first-title h2 {
+    text-align: center;
     color: #515151;
-    border-bottom: 7px solid #1abc9c;
-    padding-bottom: 32px;
+    font-family: "Roboto - Black";
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+
+.first-title h2:before {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 164px;
+    background: #1abc9c;
+    left: 43%;
+    bottom: -32px;
+}
+
+.first-title h2:hover:before {
+    width: 100%;
+    left: 20px;
 }
 
 .navigation-list li {
@@ -72,23 +101,57 @@ img {
     padding-left: 0px;
 }
 
- .navigation-list a {
+.navigation-list a {
      display: block;
      text-transform: uppercase;
      text-decoration: none;
  }
 
 .product-list {
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+
+.product-list img {
+    line-height: 0;
+    text-align: center;
+}
+
+.product-list .product-name {
+    float: left;
+    margin: 0;
+    width: 202px;
+    background-color: #323232;
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.product-list .product-price {
+    float: right;
+    margin: 0;
+    width: 54px;
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: grey;
+}
+
 .product-list li {
+    text-align: bottom;
     float: left;
     height: 322px;
     width: 256px;
-    margin-top: 89px;
-    margin-bottom: 30px;
+    margin-top: 84px;
     margin-left: 30px;
     background-color: #e9f0fd;
 }
@@ -113,9 +176,9 @@ img {
 }
 
 .picture2 {
+    box-sizing: content-box; 
     width: 176px;
-    height: 246px;
-    padding: 22px 43px 54px 36px;  
+    height: 246px; 
 }
 
 .picture3 {
@@ -148,14 +211,34 @@ img {
     height: 98px;
 }
 
-.second-title {
+.second-title h2 {
     text-align: center;
-    font-family: "open sans";
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 48px;
     color: #515151;
-    border-bottom: 7px solid #1abc9c;
+    font-family: "Roboto - Black";
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+
+.second-title h2:before {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 164px;
+    background: #1abc9c;
+    left: 43%;
+    bottom: -32px;
+}
+
+.second-title h2:hover:before {
+    width: 100%;
+    left: 20px;
+}
+
+.latest-news {
+    padding-top: 84px;
 }
 
 .latest-news section {
@@ -168,13 +251,52 @@ img {
     margin-left: 0;
 }
 
+.news-cards img {
+    width: 346px;
+    height: 260px;
+}
+
+.news-cards p {
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 16px;
+}
+
+.latest-news .news-cards h5 {
+    margin: 0;
+    padding-top: 14px;
+    color: #555252;
+    font-family: "Open Sans - Semibold";
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.latest-news .news-cards h5:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 136px;
+    background-color: #1abc9c;
+}
+
+.latest-news .news-cards h5:hover:after {
+    width: 346px;
+}
+
 .btn {
     font-family: "open sans";
     font-weight: 300;
     color: white;
+    margin-left: 215px;
+    margin-bottom: 82px;
     font-size: 14px;
     border-radius: 2px;
     border: 0 solid black;
     background-color: #4ec6ab;
     padding: 19px 43px
+}
+
+.btn:nth-child(1) {
+    margin-left: 0;
 }
