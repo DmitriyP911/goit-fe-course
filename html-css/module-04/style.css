@@ -37,12 +37,6 @@ img {
     float: left;
 }
 
-.navigation-list {
-    padding-left: 0;
-    margin-left: 646px;
-    width: 467px;
-}
-
 .navigation-list a {
     color: #0f0101;
     font-family: "Open Sans";
@@ -59,7 +53,7 @@ img {
     color: #1abc9c;
 }
 
-.navigation-list li {
+.navigation-item {
     float: right;
     padding-top: 5px;
     padding-bottom: 6px;
@@ -73,7 +67,7 @@ img {
     margin: 0;
 }
 
-.navigation-list li:nth-child(6) {
+.navigation-item:nth-child(6) {
     padding-left: 0px;
 }
 
@@ -106,17 +100,20 @@ img {
     bottom: -32px;
 }
 
-.first-title h2:hover:before {
-    width: 100%;
-    left: 20px;
-}
-
 /* FETURED PRODUCTS BLOCK STYLE */
 
 .product-list {
-    margin: 0;
+    margin: auto;
     padding: 0;
     list-style-type: none;
+}
+
+.product-price {
+    opacity: 0.44;
+}
+
+.product-list li:hover p {
+    background-color: #1abc9c;
 }
 
 .featured-list .product-list img {
@@ -136,14 +133,6 @@ img {
     font-weight: 400;
     line-height: 32px;
     text-transform: uppercase;
-}
-
-.product-list .product-name:hover {
-    background-color: #1abc9c;
-}
-
-.product-list .product-name:focus {
-    background-color: #1abc9c;
 }
 
 .product-list .product-price {
@@ -170,39 +159,13 @@ img {
     opacity: 0.44;
 }
 
-.product-list .first p {
-    margin-top: 20px;
+.product-list .product-picture {
+    padding: 20px;
+    width: 216px;
+    height: 250px;
 }
 
-.product-list .second p {
-    margin-top: 18px;
-}
-
-.product-list .third p {
-    margin-top: 57px;
-}
-
-.product-list .forth p {
-    margin-top: 34px;
-}
-
-.product-list .fifth p {
-    margin-top: 58px;
-}
-
-.product-list .six p {
-    margin-top: 53px;
-}
-
-.product-list .seven p {
-    margin-top: 20px;
-}
-
-.product-list .eight p {
-    margin-top: 89px;
-}
-
-.product-list li {
+.menu-item {
     text-align: bottom;
     float: left;
     height: 322px;
@@ -212,11 +175,11 @@ img {
     background-color: #e9f0fd;
 }
 
-.product-list li:nth-child(1) {
+.menu-item:nth-child(1) {
     margin-left: 0;
 }
 
-.product-list li:nth-child(5) {
+.menu-item:nth-child(5) {
     margin-left: 0;
 }
 
@@ -224,54 +187,6 @@ img {
     padding: 0 38px;
     text-align: center;
     float: left;
-}
-
-.picture1 {
-    width: 254px;
-    height: 266px;
-}
-
-.picture2 {
-    box-sizing: content-box; 
-    width: 176px;
-    height: 246px;
-    padding: 22px 43px 0 46px;
-}
-
-.picture3 {
-    width: 229px;
-    height: 158px;
-    padding: 71px 13px 0 13px;
-}
-
-.picture4 {
-    width: 240px;
-    height: 204px;
-    padding: 48px 8px 0 7px;
-}
-
-.picture5 {
-    width: 198px;
-    height: 213px;
-    padding: 13px 25px 0 32px;
-}
-
-.picture6 {
-    width: 254px;
-    height: 180px;
-    padding: 51px 1px 0 0;
-}
-
-.picture7 {
-    width: 196px;
-    height: 240px;
-    padding: 24px 27px 0 32px;
-}
-
-.picture8 {
-    width: 234px;
-    height: 98px;
-    padding: 97px 8px 0 13px;
 }
 
 /* SECOND TITLE STYLE */
@@ -297,11 +212,6 @@ img {
     background: #1abc9c;
     left: 43%;
     bottom: -32px;
-}
-
-.second-title h2:hover:before {
-    width: 100%;
-    left: 20px;
 }
 
 /* LATEST NEWS BLOCK STYLE */
@@ -352,10 +262,6 @@ img {
     height: 3px;
     width: 136px;
     background-color: #1abc9c;
-}
-
-.latest-news .news-cards h5:hover:after {
-    width: 346px;
 }
 
 /* BUTTON STYLE */
