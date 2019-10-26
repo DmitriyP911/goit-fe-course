@@ -18,16 +18,21 @@ main {
 }
 
 .container {
-    width: 1600px;
+    max-width: 1110px;
     margin: 0 auto;
     background-color: white;
+}
+
+.container .fluid-cards { 
+    min-height: 676px; 
+    background-color: #e9f0fd; 
 }
 
 /* SITE HEADER */
 
 .site-header {
     margin-top: 32px;
-    width: 1600px;
+    width: 1110px;
     height: 600px;
     background-image: url(img/header.png);
 }
@@ -78,7 +83,7 @@ main {
 
 .navigation-list {
     padding-left: 0;
-    margin-left: 886px;
+    margin-left: 486px;
 }
 
 .navigation-list a {
@@ -141,7 +146,7 @@ main {
 }
 
 .featured-list ul{
-    margin-left: 214px;
+    margin-left: 10px;
 }
 
 .product-list {
@@ -205,7 +210,7 @@ main {
     height: 314px;
     width: 256px;
     margin-top: 84px;
-    margin-left: 30px;
+    margin-left: 21px;
     background-color: #e9f0fd;
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
 }
@@ -327,7 +332,7 @@ main {
 }
 
 .site-footer {
-    width: 1600px;
+    width: 1110px;
     height: 88px;
     background-color: #323232;
 }
@@ -350,7 +355,7 @@ main {
 .btn1 {
     border-radius: 4px;
     position: relative;
-    left: 244px;
+    left: 28px;
     top: 225px;
     width: 104px;
     height: 104px;
@@ -363,7 +368,7 @@ main {
 .btn2 {
     border-radius: 4px;
     position: relative;
-    left: 1116px;
+    left: 836px;
     top: 225px;
     width: 104px;
     height: 104px;
