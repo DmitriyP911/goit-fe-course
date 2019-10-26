@@ -34,19 +34,25 @@ img {
 }
 
 .site-header h1 {
-    color: #ffffff;
-    font-family: "Roboto - Black";
+    margin-top: 136px;
     font-size: 60px;
-    font-weight: 400;
     text-align: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 0px;
 }
 
 .site-header h2 {
+    margin-left: 416px;
     color: #ffffff;
-    font-family: "Roboto - Light";
-    font-weight: 300;
-    text-align: center;
-    text-decoration: underline;
+    font-family: "Roboto - Light", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 36px;
+    text-decoration: none;
 }
 
 /* SITE NAVIGATION BLOCK STYLE */
@@ -116,7 +122,7 @@ img {
     color: #515151;
     font-family: "Roboto - Black", sans-serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative;
     text-decoration: none;
@@ -191,12 +197,17 @@ img {
 
 .product-picture {
     width: 256px;
-    height: 322px;
+    height: 282px;
+}
+
+.product-cart{
+    width: 256px;
+    height: 282px;
 }
 
 .menu-item {
     float: left;
-    height: 354px;
+    height: 314px;
     width: 256px;
     margin-top: 84px;
     margin-left: 30px;
@@ -222,9 +233,9 @@ img {
     box-sizing: border-box;
     margin: 10px;
     width: 236px;
-    height: 302px;
+    height: 262px;
     display: none;
-    vertical-align: middle;
+    opacity: 0.55;
 }
 
 .product-picture:hover > .submenu {
@@ -232,11 +243,9 @@ img {
     position: absolute;
     background-color: #000000;
     display: inline-block;
-    opacity: 0.55;
 }
 
 .icon {
-    margin: 10px 0 10px 10px;
     text-align: center;
     width: 50px;
     height: 50px;
@@ -245,10 +254,53 @@ img {
     font-style: none;
 }
 
+.icon:nth-child(1) {
+    position: absolute;
+    margin: 89px 0 10px 95px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-style: none;
+    background: #000000;
+}
+
+.icon:nth-child(2) {
+    position: absolute;
+    margin: 89px 0 10px 36px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-style: none;
+    background: #000000;
+}
+
+.icon:nth-child(3) {
+    position: absolute;
+    margin: 89px 0 10px 152px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-style: none;
+    background: #000000;
+}
+
+
 .icon:nth-child(4) {
     width: 166px;
     text-align: left;
-    padding-left: 13px;
+    position: absolute;
+    margin: 148px 0 10px 36px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-style: none;
+    background: #323232;
 }
 
 .icon a {
@@ -259,8 +311,32 @@ img {
     font-size: 14px;
 }
 
+.icon:hover {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1abc9c;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-style: none;
+}
+
+.icon:hover:nth-child(4) {
+    text-align: center;
+    width: 166px;
+    height: 50px;
+    border: 1px solid #1abc9c;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-style: none;
+}
+
 .icon-img {
-    padding: 9px 0;
+    padding: 13px 0;
+}
+
+.icon-img:nth-child(4) {
+    padding: 11px 125px 12px 13px;
 }
 
 .site-footer {
@@ -286,8 +362,9 @@ img {
 }
 
 .btn1 {
+    border-radius: 4px;
     position: relative;
-    left: 284px;
+    left: 244px;
     top: 225px;
     width: 104px;
     height: 104px;
@@ -298,8 +375,9 @@ img {
 }
 
 .btn2 {
+    border-radius: 4px;
     position: relative;
-    left: 1076px;
+    left: 1116px;
     top: 225px;
     width: 104px;
     height: 104px;
