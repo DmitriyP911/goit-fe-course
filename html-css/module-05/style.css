@@ -13,6 +13,10 @@ html{
     clear: both;
 }
 
+main {
+    background: #e9f0fd;
+}
+
 .container {
     width: 1600px;
     margin: 0 auto;
@@ -130,6 +134,11 @@ html{
 }
 
 /* FETURED PRODUCTS BLOCK STYLE */
+
+.featured-list {
+    line-height: 0;
+    padding-bottom: 100px;
+}
 
 .featured-list ul{
     margin-left: 214px;
@@ -318,7 +327,6 @@ html{
 }
 
 .site-footer {
-    margin-top: 100px;
     width: 1600px;
     height: 88px;
     background-color: #323232;
@@ -327,11 +335,11 @@ html{
 .site-footer p {
     padding: 32px 0 32px 0;
     text-align: center;
-    height: 17px;
     color: #fefefe;
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
 }
 
 .site-footer a {
