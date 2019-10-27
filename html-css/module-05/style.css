@@ -18,27 +18,26 @@ main {
 }
 
 .container {
-    max-width: 1110px;
+    position: relative;
+    width: 1600px;
+    background: #1abc9c;
     margin: 0 auto;
     background-color: white;
-}
-
-.container .fluid-cards { 
-    min-height: 676px; 
-    background-color: #e9f0fd; 
 }
 
 /* SITE HEADER */
 
 .site-header {
-    margin-top: 32px;
-    width: 1110px;
+    position: relative;
+    width: 1600px;
     height: 600px;
+    margin: 0 auto;
     background-image: url(img/header.png);
 }
 
 .site-header h1 {
-    margin-top: 136px;
+    padding-top: 248px;
+    margin-top: 100px;
     font-size: 60px;
     text-align: center;
     color: #ffffff;
@@ -71,19 +70,24 @@ main {
     padding-left: 22px;
 }
 
+.navigation-item:nth-child(1) {
+    margin-left: 656px;
+}
+
 .site-navigation {
-    margin-top: 38px;
+    position: relative;
+    left: 245px;
+    width: 1110px;
+    margin: 38px 0 0 0;
 }
 
 .logo-link {
     padding: 32px 169px 22px 8px;
-    margin-left: 244px;
     float: left;
 }
 
 .navigation-list {
     padding-left: 0;
-    margin-left: 486px;
 }
 
 .navigation-list a {
@@ -117,14 +121,20 @@ main {
 
  /* FIRST TITLE STYLE */
 
+.first-title {
+    position: relative;
+    width: 1600px;
+}
+
 .first-title h2 {
+    position: relative;
+    width: 1600px;
     text-align: center;
     color: #515151;
     font-family: "Roboto - Black", sans-serif;
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
-    position: relative;
     text-decoration: none;
 }
 
@@ -140,19 +150,22 @@ main {
 
 /* FETURED PRODUCTS BLOCK STYLE */
 
+.container
+.container-cards {
+    margin: 0 auto;
+}
+
 .featured-list {
+    margin: 0 auto;
     line-height: 0;
     padding-bottom: 100px;
 }
 
-.featured-list ul{
-    margin-left: 10px;
-}
-
 .product-list {
-    margin: auto;
-    padding: 0;
+    position: relative;
+    padding-left: 245px;
     list-style-type: none;
+    background: #e9f0fd;
 }
 
 .product-price {
@@ -332,7 +345,8 @@ main {
 }
 
 .site-footer {
-    width: 1110px;
+    position: relative;
+    width: 1600px;
     height: 88px;
     background-color: #323232;
 }
@@ -352,33 +366,53 @@ main {
     text-decoration: none;
 }
 
-.btn1 {
-    border-radius: 4px;
-    position: relative;
-    left: 28px;
-    top: 225px;
+.slider-button {
+    top: 37%;
     width: 104px;
     height: 104px;
-    background-color: #4ec6ab;
+    position: absolute;
+    background-color: #1abc9c;
     opacity: 0.65;
     border: none;
-    cursor: pointer;
+    outline: none;
+    transition: opacity .4s ease;
 }
 
-.btn2 {
-    border-radius: 4px;
-    position: relative;
-    left: 836px;
-    top: 225px;
-    width: 104px;
-    height: 104px;
+.right-arrow {
+    right: 245px;
+}
+
+.left-arrow {
+    left: 245px;
+}
+
+.right-arrow::before,
+.left-arrow::before {
+    content: "";
+    --s: 28px;
+    --bd: 4px solid #fff;
+    width: var(--s);
+    height: var(--s);
+    border-left:  var(--bd);
+    border-top:  var(--bd);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.right-arrow::before {
+     left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.left-arrow::before {
+     left: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slider-button:hover,
+.slider-button:focus {
     background-color: #4ec6ab;
-    opacity: 0.65;
-    border: none;
+    opacity: 1;
     cursor: pointer;
-}
-
-.btn1 img {
-    width: 22px;
-    height: 38px;
 }
