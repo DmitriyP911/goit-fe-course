@@ -13,8 +13,14 @@ html{
     clear: both;
 }
 
+main {
+    background: #e9f0fd;
+}
+
 .container {
+    position: relative;
     width: 1600px;
+    background: #1abc9c;
     margin: 0 auto;
     background-color: white;
 }
@@ -22,14 +28,16 @@ html{
 /* SITE HEADER */
 
 .site-header {
-    margin-top: 32px;
+    position: relative;
     width: 1600px;
     height: 600px;
+    margin: 0 auto;
     background-image: url(img/header.png);
 }
 
 .site-header h1 {
-    margin-top: 136px;
+    padding-top: 248px;
+    margin-top: 100px;
     font-size: 60px;
     text-align: center;
     color: #ffffff;
@@ -62,19 +70,24 @@ html{
     padding-left: 22px;
 }
 
+.navigation-item:nth-child(1) {
+    margin-left: 656px;
+}
+
 .site-navigation {
-    margin-top: 38px;
+    position: relative;
+    left: 245px;
+    width: 1110px;
+    margin: 38px 0 0 0;
 }
 
 .logo-link {
     padding: 32px 169px 22px 8px;
-    margin-left: 244px;
     float: left;
 }
 
 .navigation-list {
     padding-left: 0;
-    margin-left: 886px;
 }
 
 .navigation-list a {
@@ -108,14 +121,20 @@ html{
 
  /* FIRST TITLE STYLE */
 
+.first-title {
+    position: relative;
+    width: 1600px;
+}
+
 .first-title h2 {
+    position: relative;
+    width: 1600px;
     text-align: center;
     color: #515151;
     font-family: "Roboto - Black", sans-serif;
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
-    position: relative;
     text-decoration: none;
 }
 
@@ -129,16 +148,17 @@ html{
     bottom: -32px;
 }
 
-/* FETURED PRODUCTS BLOCK STYLE */
+/* NEW COLLECTION BLOCK STYLE */
 
-.featured-list ul{
-    margin-left: 214px;
+.featured-list {
+    padding-bottom: 100px;
 }
 
 .product-list {
-    margin: auto;
-    padding: 0;
+    position: relative;
+    padding-left: 245px;
     list-style-type: none;
+    background: #e9f0fd;
 }
 
 .product-price {
@@ -196,7 +216,7 @@ html{
     height: 314px;
     width: 256px;
     margin-top: 84px;
-    margin-left: 30px;
+    margin-left: 28px;
     background-color: #e9f0fd;
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
 }
@@ -221,23 +241,21 @@ html{
     width: 236px;
     height: 262px;
     display: none;
-    opacity: 0.55;
+    background: rgba(0, 0, 0, 0.55)
 }
 
 .product-picture:hover > .submenu {
     text-align: center;
     position: absolute;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.55);
     display: inline-block;
 }
 
 .icon {
-    text-align: center;
     width: 50px;
     height: 50px;
     border: 1px solid #ffffff;
     cursor: pointer;
-    font-style: none;
 }
 
 .icon:nth-child(1) {
@@ -249,7 +267,7 @@ html{
     border: 1px solid #ffffff;
     cursor: pointer;
     font-style: none;
-    background: #000000;
+    background: rgba(0, 0, 0, 0);
 }
 
 .icon:nth-child(2) {
@@ -261,7 +279,7 @@ html{
     border: 1px solid #ffffff;
     cursor: pointer;
     font-style: none;
-    background: #000000;
+    background: rgba(0, 0, 0, 0);
 }
 
 .icon:nth-child(3) {
@@ -273,7 +291,7 @@ html{
     border: 1px solid #ffffff;
     cursor: pointer;
     font-style: none;
-    background: #000000;
+    background: rgba(0, 0, 0, 0);
 }
 
 
@@ -286,7 +304,8 @@ html{
     border: 1px solid #ffffff;
     cursor: pointer;
     font-style: none;
-    background: #323232;
+    background: rgba(0, 0, 0, 0.497);
+    padding-top: 0;
 }
 
 .icon:hover {
@@ -307,18 +326,15 @@ html{
     background-color: #1abc9c;
     cursor: pointer;
     font-style: none;
+    padding-top: 0px;
 }
 
 .icon-img {
     padding: 13px 0;
 }
 
-.icon-img:nth-child(4) {
-    padding: 11px 125px 12px 13px;
-}
-
 .site-footer {
-    margin-top: 100px;
+    position: relative;
     width: 1600px;
     height: 88px;
     background-color: #323232;
@@ -327,11 +343,11 @@ html{
 .site-footer p {
     padding: 32px 0 32px 0;
     text-align: center;
-    height: 17px;
     color: #fefefe;
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
 }
 
 .site-footer a {
@@ -339,33 +355,53 @@ html{
     text-decoration: none;
 }
 
-.btn1 {
-    border-radius: 4px;
-    position: relative;
-    left: 244px;
-    top: 225px;
+.slider-button {
+    top: 37%;
     width: 104px;
     height: 104px;
-    background-color: #4ec6ab;
+    position: absolute;
+    background-color: #1abc9c;
     opacity: 0.65;
     border: none;
-    cursor: pointer;
+    outline: none;
+    transition: opacity .4s ease;
 }
 
-.btn2 {
-    border-radius: 4px;
-    position: relative;
-    left: 1116px;
-    top: 225px;
-    width: 104px;
-    height: 104px;
+.right-arrow {
+    right: 245px;
+}
+
+.left-arrow {
+    left: 245px;
+}
+
+.right-arrow::before,
+.left-arrow::before {
+    content: "";
+    --s: 28px;
+    --bd: 4px solid #fff;
+    width: var(--s);
+    height: var(--s);
+    border-left:  var(--bd);
+    border-top:  var(--bd);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.right-arrow::before {
+     left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.left-arrow::before {
+     left: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slider-button:hover,
+.slider-button:focus {
     background-color: #4ec6ab;
-    opacity: 0.65;
-    border: none;
+    opacity: 1;
     cursor: pointer;
-}
-
-.btn1 img {
-    width: 22px;
-    height: 38px;
 }
