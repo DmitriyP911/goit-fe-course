@@ -156,7 +156,7 @@ main {
 
 .product-list {
     position: relative;
-    padding-left: 256px;
+    padding-left: 245px;
     list-style-type: none;
     background: #e9f0fd;
 }
@@ -216,7 +216,7 @@ main {
     height: 314px;
     width: 256px;
     margin-top: 84px;
-    margin-left: 21px;
+    margin-left: 28px;
     background-color: #e9f0fd;
     box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
 }
