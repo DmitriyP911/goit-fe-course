@@ -19,25 +19,24 @@ main {
 
 .container {
     position: relative;
-    width: 1600px;
+    width: 100%;
     background: #1abc9c;
-    margin: 0 auto;
     background-color: white;
+    margin: 0 auto;
 }
 
 /* SITE HEADER */
 
 .site-header {
     position: relative;
-    width: 1600px;
-    height: 600px;
     margin: 0 auto;
+    height: 600px;
     background-image: url(img/header.png);
+    background-repeat: round;
 }
 
 .site-header h1 {
     padding-top: 248px;
-    margin-top: 100px;
     font-size: 60px;
     text-align: center;
     color: #ffffff;
@@ -48,7 +47,9 @@ main {
 }
 
 .site-header h2 {
-    margin-left: 416px;
+    width: 1110px;
+    padding-left: 340px;
+    margin: 0 auto;
     color: #ffffff;
     font-family: "Roboto - Light", sans-serif;
     font-weight: 100;
@@ -76,9 +77,8 @@ main {
 
 .site-navigation {
     position: relative;
-    left: 245px;
     width: 1110px;
-    margin: 38px 0 0 0;
+    margin: 0 auto;
 }
 
 .logo-link {
@@ -123,12 +123,13 @@ main {
 
 .first-title {
     position: relative;
-    width: 1600px;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .first-title h2 {
     position: relative;
-    width: 1600px;
+    width: 1110px;
     text-align: center;
     color: #515151;
     font-family: "Roboto - Black", sans-serif;
@@ -144,7 +145,7 @@ main {
     height: 7px;
     width: 164px;
     background: #1abc9c;
-    left: 45%;
+    left: 42%;
     bottom: -32px;
 }
 
@@ -152,13 +153,15 @@ main {
 
 .featured-list {
     padding-bottom: 100px;
+    margin: 0 auto;
+    width: 1110px;
 }
 
 .product-list {
     position: relative;
-    padding-left: 245px;
     list-style-type: none;
     background: #e9f0fd;
+    padding: 0;
 }
 
 .product-price {
@@ -202,13 +205,15 @@ main {
 }
 
 .product-picture {
+    background-color: white;
     width: 256px;
     height: 282px;
 }
 
 .product-cart{
-    width: 256px;
+    width: 226px;
     height: 282px;
+    padding-left: 15px;
 }
 
 .menu-item {
@@ -335,7 +340,7 @@ main {
 
 .site-footer {
     position: relative;
-    width: 1600px;
+    width: 100%;
     height: 88px;
     background-color: #323232;
 }
@@ -355,6 +360,13 @@ main {
     text-decoration: none;
 }
 
+.button-block {
+    position: relative;
+    top: 37%;
+    width: 1110px;
+    margin: 0 auto;
+}
+
 .slider-button {
     top: 37%;
     width: 104px;
@@ -368,11 +380,13 @@ main {
 }
 
 .right-arrow {
-    right: 245px;
+    top: 50%;
+    right: 0;
 }
 
 .left-arrow {
-    left: 245px;
+
+    left: 0;
 }
 
 .right-arrow::before,
