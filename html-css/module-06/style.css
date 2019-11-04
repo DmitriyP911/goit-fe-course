@@ -170,6 +170,8 @@ h3:after {
     width: 380px;
     height: 470px;
     background: linear-gradient(to bottom, rgba(239, 138, 138, 0.9), rgba(238, 215, 135, 0.9));
+    transition-duration: 2s;
+    transition-delay: 2s;
 }
 
 .submenu-items {
@@ -187,15 +189,18 @@ h3:after {
 }
 
 .social-link {
-    width: 26px;
-    height: 26px;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
 
 .team-card-container:hover > .submenu {
     display: block;
+    transition-delay: 2s;
+    transition-duration: 2s;
 }
 
 /* SITE FOOTER */
