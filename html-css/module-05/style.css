@@ -65,14 +65,17 @@ main {
     float: right;
 }
 
-.navigation-item a{
+.navigation-item {
     float: left;
+}
+
+.navigation-item a{
     padding: 37px 0 22px 0;
     padding-left: 22px;
 }
 
 .navigation-item:nth-child(1) {
-    margin-left: 656px;
+    margin-left: 400px;
 }
 
 .site-navigation {
@@ -139,14 +142,13 @@ main {
     text-decoration: none;
 }
 
-.first-title h2:before {
-    position: absolute;
+.first-title h2:after {
+    display: block;
+    margin: 30px auto 0;
     content: "";
     height: 7px;
     width: 164px;
     background: #1abc9c;
-    left: 42%;
-    bottom: -32px;
 }
 
 /* NEW COLLECTION BLOCK STYLE */
