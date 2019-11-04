@@ -17,6 +17,22 @@ html {
     justify-content: space-between;
 }
 
+.navigation-item a::after {
+    display: block;
+
+    height: 3px;
+    width: 100%;
+    margin-top: 12px;
+    background: #f38181;
+}
+
+.navigation-item a:hover {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    color: #f38181;
+}
+
 .site-logo {
     display: flex;
     align-items: center;
@@ -56,14 +72,31 @@ h3 {
     color: #333333;
 }
 
+h3:after {
+    display: block;
+    margin: 42px auto 0;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
 /* COMPANY SERVICES */
 
 .services-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
 }
 
+.service-item {
+    flex: 0 0 320px;
+    position: relative;
+}
+
 .service-item h5 {
+    margin-left: 60px;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -72,10 +105,16 @@ h3 {
 }
 
 .service-item p {
+    margin-left: 60px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #999999;
+}
+
+.service-item img {
+    position: absolute;
+    top: 26px;
 }
 
 /* TEAM CARDS */
@@ -94,6 +133,7 @@ h3 {
 }
 
 .team-card-container {
+    position: relative;
     width: 390px;
     height: 552px;
 }
@@ -120,6 +160,43 @@ h3 {
     color: #999999;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+}
+
+.submenu {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: none;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(to bottom, rgba(239, 138, 138, 0.9), rgba(238, 215, 135, 0.9));
+}
+
+.submenu-items {
+    height: 56px;
+    width: 240px;
+    margin: 50% auto;
+}
+
+.submenu-items a {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+}
+
+.social-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.team-card-container:hover > .submenu {
+    display: block;
 }
 
 /* SITE FOOTER */
@@ -175,4 +252,5 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
     outline: none;
+    cursor: pointer;
 }
