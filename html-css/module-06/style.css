@@ -156,6 +156,7 @@ h3:after {
 }
 
 .team-list {
+    margin-top: 60px;
     display: flex;
     list-style: none;
     padding-left: 20px;
@@ -227,6 +228,7 @@ h3:after {
 /* SITE FOOTER */
 
 .site-footer {
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     width: 1200px;
