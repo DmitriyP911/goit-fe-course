@@ -19,18 +19,19 @@ html {
 
 .navigation-item a::after {
     display: block;
-
     height: 3px;
     width: 100%;
     margin-top: 12px;
     background: #f38181;
+    transition-duration: .9s;
 }
 
-.navigation-item a:hover {
+.navigation-item a:hover:after {
     display: inline-block;
     content: "";
     width: 100%;
     color: #f38181;
+    border: bottom 3px solid red;
 }
 
 .site-logo {
@@ -136,6 +137,7 @@ h3:after {
     position: relative;
     width: 390px;
     height: 552px;
+    z-index: 20;
 }
 
 .team-list {
@@ -163,24 +165,29 @@ h3:after {
 }
 
 .submenu {
+    display: flex;
     position: absolute;
-    top: -10px;
-    left: -10px;
-    display: none;
     width: 380px;
     height: 470px;
     background: linear-gradient(to bottom, rgba(239, 138, 138, 0.9), rgba(238, 215, 135, 0.9));
+    transition-duration: .5s;
+    opacity: 0;
+    box-shadow: 10px 10px #95e1d3;
 }
 
 .submenu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 56px;
     width: 240px;
     margin: 50% auto;
+    transition-duration: .5s;
 }
 
 .submenu-items a {
     position: relative;
-    display: inline-block;
+    display: flex;
     width: 56px;
     height: 56px;
     background: #fce38a;
@@ -195,8 +202,12 @@ h3:after {
     margin: auto;
 }
 
-.team-card-container:hover > .submenu {
-    display: block;
+.team-card-container:hover .submenu {
+    display: flex;
+    opacity: 1;
+    transform: translate(-10px, -10px);
+    transition-duration: .5s;
+    box-shadow: #95e1d3 10px;
 }
 
 /* SITE FOOTER */
