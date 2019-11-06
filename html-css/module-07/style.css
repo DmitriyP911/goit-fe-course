@@ -1,0 +1,60 @@
+body {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* SITE-NAVIGATION */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    width: 480px;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* MAIN CONTENT */
+
+.site-title {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.company-services-list {
+    display: flex;
+    list-style: none;
+}
+
+.company-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 274px;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
