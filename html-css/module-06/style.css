@@ -30,7 +30,7 @@ html {
     color: #f38181;
 }
 
-.navigation-list a {
+.navigation-item a {
     text-transform: uppercase;
     text-decoration: none;
     color: #95e1d3;
@@ -63,7 +63,7 @@ html {
     align-items: center;
 }
 
-.navigation-list li {
+.navigation-item {
     padding-left: 54px;
 }
 
