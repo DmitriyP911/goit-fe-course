@@ -1,4 +1,4 @@
-body {
+.company-services {
     width: 940px;
     margin: 0 auto;
 }
@@ -7,7 +7,15 @@ body {
 
 .site-header {
     display: flex;
+    width: 940px;
+    margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    width: 79px;
+    height: 28px;
 }
 
 .site-navigation {
@@ -28,17 +36,35 @@ body {
 
 /* MAIN CONTENT */
 
-.site-title {
+.wrapper h2 {
+    margin: 0 auto;
+    width: 940px;
+    padding-top: 128px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.contactus-area h2 {
+    padding-top: 110px;
+    color: white;
+    text-transform: uppercase;
 }
 
 h3 {
     text-align: center;
+    color: #777777;
+}
+
+.company-services {
+    padding-top: 60px;
+    padding-bottom: 104px;
 }
 
 .company-services-list {
     display: flex;
     list-style: none;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .company-service-item {
@@ -48,13 +74,79 @@ h3 {
     width: 274px;
 }
 
+.company-service-item p {
+    text-align: center;
+}
+
 .user-box {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .user-information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.contactus-area {
+    position: relative;
+    background-color: #222222;
+}
+
+.map-background {
+    position: absolute;
+    top: 120px;
+    right: 10%;
+}
+
+.form-area {
+    padding-top: 74px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-information input {
+    line-height: 30px;
+    height: 50px;
+    width: 455px;
+    padding: 0;
+    border-radius: 2px;
+    text-indent: 6px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.user-message {
+    padding-left: 25px;
+}
+
+.user-message input {
+    line-height: 30px;
+    height: 210px;
+    width: 455px;
+    padding: 0;
+    border-radius: 2px;
+    text-indent: 6px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 114px;
+}
+
+.button button {
+    text-transform: uppercase;
+    width: 240px;
+    height: 66px;
+    background-color: #fed136;
+    opacity: 1;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
