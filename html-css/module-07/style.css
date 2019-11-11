@@ -26,6 +26,7 @@
 .navigation-list {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -70,6 +71,7 @@ h3 {
 }
 
 .company-services {
+    position: relative;
     padding-top: 60px;
     padding-bottom: 104px;
 }
@@ -120,8 +122,16 @@ h3 {
 
 .map-background {
     position: absolute;
-    top: 120px;
-    right: 10%;
+    top: 560px;
+    right: -260px;
+    z-index: 20;
+}
+
+.map-background:after {
+    position: absolute;
+    top: 560px;
+    right: -180px;
+    z-index: 20;
 }
 
 .form-area {
@@ -131,6 +141,11 @@ h3 {
 }
 
 .user-information input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #bbbbbb;
+    text-transform: uppercase;
     line-height: 30px;
     height: 50px;
     width: 455px;
@@ -143,6 +158,49 @@ h3 {
 
 .user-message {
     padding-left: 25px;
+}
+
+.user-message input{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #bbbbbb;
+    width: 455px;
+    height: 210px;
+    padding-left: 25px;
+}
+
+.user-name:hover:invalid {
+    outline: 2px solid red;
+}
+
+.user-name:hover:valid {
+    outline: 2px solid green;
+}
+
+.user-mail:hover:invalid {
+    outline: 2px solid red;
+}
+
+.user-mail:hover:valid {
+    outline: 2px solid green;
+}
+
+.subject:hover:invalid {
+    outline: 2px solid red;
+}
+
+.subject:hover:valid {
+    outline: 2px solid green;
+}
+
+.user-message:hover:invalid {
+    outline: 2px solid red;
+}
+
+.user-message:hover:valid {
+    outline: 2px solid green;
 }
 
 .user-message input {
