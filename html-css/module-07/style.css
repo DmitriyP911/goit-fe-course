@@ -215,6 +215,17 @@ h3 {
     background-color: #ffffff;
 }
 
+.user-message textarea {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #bbbbbb;
+    width: 455px;
+    height: 210px;
+    padding-left: 25px;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -222,7 +233,7 @@ h3 {
     padding-bottom: 114px;
 }
 
-.button button {
+.button {
     text-transform: uppercase;
     width: 240px;
     height: 66px;
