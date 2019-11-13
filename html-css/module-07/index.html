@@ -61,22 +61,21 @@
         <section class="contactus-area">
             <h2>contact us</h2>
             <h3>Proin iaculis purus consequat sem cure.</h3>
-
-        <div class="form-area">
-            <div class="user-box">
-                <form class="user-information" action="#" method="get">
-                    <input class="user-name" type="text" placeholder="Your name *">
-                    <input class="user-mail" type="email" placeholder="Your E-mail *">
-                    <input class="subject" type="url" placeholder="url">
-                </form>
-                <div class="user-message">
-                    <input class="user-message" type="text" placeholder="Your message *">
+            <form action="#" method="POST">
+                <div class="form-area">
+                    <div class="user-information">
+                        <input class="user-name" type="text" placeholder="your name *" required>
+                        <input class="user-mail" type="email" placeholder="your E-mail *" required>
+                        <input class="subject" type="text" placeholder="subject">
+                    </div>
+                    <div class="user-comment">
+                        <textarea name="comments" id="comment" cols="30" rows="10" placeholder="Your message ..."></textarea>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="button">
-            <button>send message</button>
-        </div>
+                <div class="btn">
+                    <button type="submit">send message</button>
+                </div> 
+            </form>
         </section>
     </main>
 </body>
