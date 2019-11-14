@@ -6,41 +6,90 @@
 /* SITE HEADER */
 
 .site-navigation {
+    padding-top: 20px; 
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
 }
 
+.navigation-item {
+    padding-left: 7%;
+    padding-top: 6%;
+}
+
+.navigation-item:first-of-type {
+    padding-left: 0;
+}
+
 .site-navigation a {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
     text-decoration: none;
     font-size: 14px;
-    padding: 0 0 20px 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+.site-navigation a:hover {
+    border: 2px solid white;
+    border-radius: 25px;
 }
 
 .site-header {
+    background: rgb(73, 72, 72);
     background-image: url(img/back.png);
     height: auto;
 }
 
 .site-header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    padding-top: 37.3%;
     text-align: center;
 }
 
 .site-header h2 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
 }
 
 .site-header h3 {
+    width: 218px;
+    padding-left: 15.63%;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 300;
     text-align: center;
 }
 
 .header-button {
     display: flex;
     justify-content: center;
-    padding-top: 330px;
+    padding-bottom: 35.55%;
 }
 
+.header-button button {
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
 /* MAIN CONTENT */
 
 .container {
@@ -50,6 +99,12 @@
 }
 
 .container h2 {
+    color: #333333;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 4%;
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -71,14 +126,40 @@
 }
 
 .partner-cards-items h4 {
+    color: #333333;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 0;
     text-align: center;
 }
 
 .partner-cards-items p {
+    width: 200px;
     text-align: center;
+    color: #666666;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 18.75%;
 }
 
 .showother-button {
     display: flex;
     justify-content: center;
+    padding-bottom: 18%;
+}
+
+.showother-button button {
+    width: 280px;
+    height: 40px;
+    border: 2px solid #ff4e50;
+    background-color: #ffffff;
+    border-radius: 25px;
+    color: #ff4e50;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
 }
