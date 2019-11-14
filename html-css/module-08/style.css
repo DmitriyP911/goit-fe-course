@@ -6,7 +6,7 @@
 /* SITE HEADER */
 
 .site-navigation {
-    padding-top: 20px; 
+    padding-top: 0.3rem; 
     list-style: none;
     display: flex;
     justify-content: center;
@@ -14,8 +14,8 @@
 }
 
 .navigation-item {
-    padding-left: 7%;
-    padding-top: 6%;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .navigation-item:first-of-type {
@@ -39,7 +39,7 @@
 
 .site-header {
     background: rgb(73, 72, 72);
-    background-image: url(img/back.png);
+    background-image: url(img/back-phone.png);
     height: auto;
 }
 
@@ -62,8 +62,6 @@
 }
 
 .site-header h3 {
-    width: 218px;
-    padding-left: 15.63%;
     color: #ffffff;
     font-family: "Roboto";
     font-size: 18px;
@@ -74,7 +72,7 @@
 .header-button {
     display: flex;
     justify-content: center;
-    padding-bottom: 35.55%;
+    padding-bottom: 25.55%;
 }
 
 .header-button button {
@@ -136,13 +134,11 @@
 }
 
 .partner-cards-items p {
-    width: 200px;
     text-align: center;
     color: #666666;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 300;
-    padding-left: 18.75%;
 }
 
 .showother-button {
@@ -162,4 +158,167 @@
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .wrapper {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0.3rem 0 0 0;
+        align-items: center;
+    }
+
+    .desktop h1 {
+        padding: 0 0 0 5%;
+    }
+
+    .site-header h2 {
+        font-size: 66px;
+        padding-top: 15%;
+    }
+
+    .navigation-item {
+        padding-top: 0;
+    }
+
+    .site-navigation {
+        height: auto;
+        padding-right: 8%;
+    }
+
+    .site-header {
+        background: rgb(73, 72, 72);
+        background-image: url(img/back-tablet.png);
+        height: auto;
+    }
+
+    .header-button {
+        padding-bottom: 18.55%;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .partner-cards {
+        width: 600px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .partner-cards-items {
+        padding-left: 8%;
+    }
+
+    .partner-cards-items:first-of-type {
+        padding-left: 0;
+    }
+
+    .partner-cards-items:nth-child(3) {
+        padding-left: 0;
+    }
+
+    .partner-cards-items p {
+        width: 200px;
+    }
+}
+
+@media (min-width: 769px) {
+    .wrapper {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0.3rem 0 0 0;
+        align-items: center;
+    }
+
+    .desktop h1 {
+        padding: 0 0 0 5%;
+    }
+
+    .site-header h2 {
+        font-size: 56px;
+        padding-top: 3%;
+    }
+
+    .navigation-item {
+        padding-top: 0;
+    }
+
+    .site-navigation {
+        height: auto;
+        padding-right: 8%;
+    }
+
+    .site-header {
+        background: rgb(73, 72, 72);
+        background-image: url(img/back-tablet.png);
+        height: auto;
+    }
+
+    .header-button {
+        padding: 0;
+    }
+
+    .header-titler-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    .header-titler-wrapper h2 {
+        margin-bottom: 0;
+        width: 620px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-titler-wrapper h3 {
+        margin-top: 0;
+        padding-top: 0.5rem;
+        font-size: 24px;
+    }
+
+    .partner-cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .partner-cards-items {
+        padding-left: 3rem;
+    }
+
+    .partner-cards-items:first-of-type {
+        padding-left: 0;
+    }
+
+    .partner-cards-items p {
+        width: 200px;
+    }
 }
