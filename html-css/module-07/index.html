@@ -61,11 +61,11 @@
         <section class="contactus-area">
             <h2>contact us</h2>
             <h3>Proin iaculis purus consequat sem cure.</h3>
-            <form action="#" method="POST">
+            <form action="#" method="GET">
                 <div class="form-area">
                     <div class="user-information">
-                        <input class="user-name" type="text" placeholder="your name *" required>
-                        <input class="user-mail" type="email" placeholder="your E-mail *" required>
+                        <input class="user-name" type="text" name="user-name" placeholder="your name *" required>
+                        <input class="user-mail" type="email" name="user-email" placeholder="your E-mail *" required>
                         <input class="subject" type="text" placeholder="subject">
                     </div>
                     <div class="user-comment">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <button type="submit">send message</button>
+                    <button type="submit" value="send">send message</button>
                 </div> 
             </form>
         </section>
