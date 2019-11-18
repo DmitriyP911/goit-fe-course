@@ -1,25 +1,33 @@
 .wrapper {
-    width: 320px;
+    max-width: 320px;
+    min-width: 280px;
     margin: 0 auto;
 }
 
-/* SITE HEADER */
-
 .site-navigation {
-    padding-top: 0.3rem; 
+    padding-left: 0;
+    margin-top: 0;
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 .navigation-item {
     padding-left: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 6%;
 }
 
 .navigation-item:first-of-type {
     padding-left: 0;
+}
+
+.site-header a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 .site-navigation a {
@@ -29,15 +37,17 @@
     font-weight: 700;
     text-decoration: none;
     font-size: 14px;
+    border: 3px solid rgba(0, 0, 0, 0);
     padding: 5px 20px 5px 20px;
 }
 
 .site-navigation a:hover {
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 25px;
 }
 
 .site-header {
+    width: 100%;
     background: rgb(73, 72, 72);
     background-image: url(img/back-phone.png);
     height: auto;
@@ -48,13 +58,13 @@
     font-weight: 700;
     color: white;
     font-size: 20px;
-    padding-top: 37.3%;
+    padding-top: 4rem;
     text-align: center;
 }
 
 .site-header h2 {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -143,7 +153,9 @@
 
 .showother-button {
     display: flex;
+    width: 280px;
     justify-content: center;
+    margin: 0 auto;
     padding-bottom: 18%;
 }
 
@@ -162,11 +174,18 @@
 
 @media (min-width: 321px) and (max-width: 768px) {
     .wrapper {
-        width: 768px;
+        max-width: 768px;
+        min-width: 462px;
         margin: 0 auto;
     }
 
     .desktop {
+        width: 100%;
+    }
+
+    .desktop {
+        padding-top: 4%;
+        min-width: 322px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -175,6 +194,7 @@
     }
 
     .desktop h1 {
+        margin-top: 0;
         padding: 0 0 0 5%;
     }
 
@@ -189,7 +209,7 @@
 
     .site-navigation {
         height: auto;
-        padding-right: 8%;
+        padding-right: 4%;
     }
 
     .site-header {
@@ -237,22 +257,32 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 750px) {
     .wrapper {
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         margin: 0 auto;
+        max-height: 688px;
+    }
+
+    .site-header {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
     }
 
     .desktop {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 0.3rem 0 0 0;
+        padding: 2rem 0 0 0;
         align-items: center;
     }
 
     .desktop h1 {
-        padding: 0 0 0 5%;
+        padding: 0 0 0 19%;
     }
 
     .site-header h2 {
@@ -266,7 +296,7 @@
 
     .site-navigation {
         height: auto;
-        padding-right: 8%;
+        padding-right: 19%;
     }
 
     .site-header {
