@@ -1,25 +1,31 @@
 .wrapper {
-    width: 320px;
     margin: 0 auto;
 }
 
-/* SITE HEADER */
-
 .site-navigation {
-    padding-top: 0.3rem; 
+    padding-left: 0;
+    margin-top: 0;
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 .navigation-item {
     padding-left: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 6%;
 }
 
 .navigation-item:first-of-type {
     padding-left: 0;
+}
+
+.site-header a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 .site-navigation a {
@@ -29,17 +35,20 @@
     font-weight: 700;
     text-decoration: none;
     font-size: 14px;
+    border: 3px solid rgba(0, 0, 0, 0);
     padding: 5px 20px 5px 20px;
 }
 
 .site-navigation a:hover {
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 25px;
 }
 
 .site-header {
+    width: 100%;
     background: rgb(73, 72, 72);
     background-image: url(img/back-phone.png);
+    background-size: cover;
     height: auto;
 }
 
@@ -48,13 +57,13 @@
     font-weight: 700;
     color: white;
     font-size: 20px;
-    padding-top: 37.3%;
+    padding-top: 4rem;
     text-align: center;
 }
 
 .site-header h2 {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -143,7 +152,9 @@
 
 .showother-button {
     display: flex;
+    width: 280px;
     justify-content: center;
+    margin: 0 auto;
     padding-bottom: 18%;
 }
 
@@ -160,22 +171,27 @@
     cursor: pointer;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 480px){
     .wrapper {
-        width: 768px;
         margin: 0 auto;
     }
 
     .desktop {
+        width: 100%;
+    }
+
+    .desktop {
+        padding-top: 2rem;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 0.3rem 0 0 0;
-        align-items: center;
+        align-content: center;
     }
 
     .desktop h1 {
         padding: 0 0 0 5%;
+        margin-bottom: 0;
     }
 
     .site-header h2 {
@@ -183,13 +199,11 @@
         padding-top: 15%;
     }
 
-    .navigation-item {
-        padding-top: 0;
-    }
-
     .site-navigation {
         height: auto;
-        padding-right: 8%;
+        padding-right: 4%;
+        margin-bottom: 0;
+        margin-top: 5px;
     }
 
     .site-header {
@@ -220,6 +234,10 @@
         justify-content: center;
     }
 
+    .showother-button {
+        width: 350px;
+    }
+
     .partner-cards-items {
         padding-left: 8%;
     }
@@ -237,9 +255,10 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 944px) {
     .wrapper {
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -247,12 +266,12 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding: 0.3rem 0 0 0;
+        padding: 2rem 0 0 0;
         align-items: center;
     }
 
     .desktop h1 {
-        padding: 0 0 0 5%;
+        padding: 0 0 0 19%;
     }
 
     .site-header h2 {
@@ -266,7 +285,7 @@
 
     .site-navigation {
         height: auto;
-        padding-right: 8%;
+        padding-right: 19%;
     }
 
     .site-header {
@@ -280,9 +299,6 @@
     }
 
     .header-titler-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
         padding-top: 5rem;
         padding-bottom: 10rem;
@@ -290,12 +306,12 @@
 
     .header-titler-wrapper h2 {
         margin-bottom: 0;
-        width: 620px;
     }
 
     .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
@@ -303,6 +319,10 @@
         margin-top: 0;
         padding-top: 0.5rem;
         font-size: 24px;
+    }
+
+    .partner-cards {
+        width: 100%;
     }
 
     .partner-cards {
