@@ -1,5 +1,6 @@
 .wrapper {
     margin: 0 auto;
+    min-width: 280px;
 }
 
 .site-navigation {
