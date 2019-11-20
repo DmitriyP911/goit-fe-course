@@ -1,6 +1,4 @@
 .wrapper {
-    max-width: 320px;
-    min-width: 280px;
     margin: 0 auto;
 }
 
@@ -50,6 +48,7 @@
     width: 100%;
     background: rgb(73, 72, 72);
     background-image: url(img/back-phone.png);
+    background-size: cover;
     height: auto;
 }
 
@@ -172,10 +171,8 @@
     cursor: pointer;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 480px){
     .wrapper {
-        max-width: 768px;
-        min-width: 462px;
         margin: 0 auto;
     }
 
@@ -184,18 +181,17 @@
     }
 
     .desktop {
-        padding-top: 4%;
-        min-width: 322px;
+        padding-top: 2rem;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 0.3rem 0 0 0;
-        align-items: center;
+        align-content: center;
     }
 
     .desktop h1 {
-        margin-top: 0;
         padding: 0 0 0 5%;
+        margin-bottom: 0;
     }
 
     .site-header h2 {
@@ -203,13 +199,11 @@
         padding-top: 15%;
     }
 
-    .navigation-item {
-        padding-top: 0;
-    }
-
     .site-navigation {
         height: auto;
         padding-right: 4%;
+        margin-bottom: 0;
+        margin-top: 5px;
     }
 
     .site-header {
@@ -240,6 +234,10 @@
         justify-content: center;
     }
 
+    .showother-button {
+        width: 350px;
+    }
+
     .partner-cards-items {
         padding-left: 8%;
     }
@@ -257,20 +255,11 @@
     }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 944px) {
     .wrapper {
         max-width: 1440px;
         width: 100%;
         margin: 0 auto;
-        max-height: 688px;
-    }
-
-    .site-header {
-        width: 100%;
-    }
-
-    .container {
-        width: 100%;
     }
 
     .desktop {
@@ -310,9 +299,6 @@
     }
 
     .header-titler-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
         padding-top: 5rem;
         padding-bottom: 10rem;
@@ -320,12 +306,12 @@
 
     .header-titler-wrapper h2 {
         margin-bottom: 0;
-        width: 620px;
     }
 
     .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
@@ -333,6 +319,10 @@
         margin-top: 0;
         padding-top: 0.5rem;
         font-size: 24px;
+    }
+
+    .partner-cards {
+        width: 100%;
     }
 
     .partner-cards {
