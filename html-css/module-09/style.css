@@ -1,0 +1,143 @@
+.navigation {
+    padding-top: 20px;
+}
+
+.navigation a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border: 3px solid transparent;
+    padding: 5px 18px 5px 19px; 
+}
+
+.navigation a:hover {
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+.first-title {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.first-title a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.second-title {
+    color: white;
+    margin-top: 38px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.third-title {
+    color: white;
+    margin-top: 18px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.header-button {
+    padding-top: 20px;
+    padding-bottom: 138px;
+}
+
+.h-button {
+    outline: none;
+    width: 280px;
+    border: none;
+    padding: 12px 40px;
+    color: white;
+    border-radius: 25px;
+    background-color:  #ff4e50;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.site-header {
+    background-image: url(img/1.png);
+    background-size: cover;
+    background-color: rgba(1, 1, 1, 1)
+}
+
+.main-cards {
+    margin-top: 28px;
+}
+
+.main-title {
+    margin-top: 68px;
+    text-align: center;
+}
+
+p {
+    max-width: 220px;
+    text-align: center;
+}
+
+.footer-button {
+    margin-top: 30px;
+    margin-bottom: 58px;
+}
+
+.f-button {
+    outline: none;
+    width: 280px;
+    border: 3px solid #ff4e50;
+    padding: 12px 40px;
+    color: #ff4e50;
+    border-radius: 25px;
+    background-color:  white;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .first-title {
+        margin-top: 26px;
+    }
+
+    .site-header {
+        background-image: url(img/2.png);
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 52px;
+    }
+
+    .navigation-items {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .main-cards {
+        margin-top: 30px;
+    }
+
+    p {
+        max-width: 480px;
+    }
+}
