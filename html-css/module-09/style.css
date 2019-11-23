@@ -21,6 +21,11 @@
     text-align: center;
 }
 
+img {
+    width: 125px;
+    height: 125px;
+}
+
 .first-title a {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -109,7 +114,7 @@ p {
     font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     .first-title {
         margin-top: 26px;
     }
@@ -125,7 +130,15 @@ p {
     }
 
     h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .second-title {
+        margin-top: 160px;
         font-size: 52px;
+        max-width: 540px;
     }
 
     .navigation-items {
@@ -139,5 +152,20 @@ p {
 
     p {
         max-width: 480px;
+    }
+
+    .header-button {
+        padding-top: 30px;
+        padding-bottom: 234px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
     }
 }
