@@ -1,12 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
-
-
 /* PAGE HEADER */
 
 .page-header {
     width: 100%;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(img/Layer_15.png);
     background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(img/Layer_15.png);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(img/Layer_15.png);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(img/Layer_15.png);
 }
 
@@ -88,6 +85,7 @@
 }
 
 .page-header_title-first {
+    margin-top: 164px;
     color: #ffffff;
     font-family: "Kaushan Script";
     font-size: 72px;
@@ -222,6 +220,7 @@
     width: 1200px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 .our-team_cards {
@@ -246,6 +245,7 @@
     font-style: none;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .our-team_title-first {
@@ -275,6 +275,7 @@
 }
 
 .our-team_cards-item-job {
+    margin-top: 4px;
     font-style: italic;
 }
 
@@ -288,4 +289,136 @@
 .our-team_card-img {
     width: 380px;
     height: 470px;
+}
+
+.our-team_cards-submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 138, 138, 0.9)), to(rgba(238, 215, 135, 0.9)));
+    background: -o-linear-gradient(top, rgba(239, 138, 138, 0.9), rgba(238, 215, 135, 0.9));
+    background: linear-gradient(to bottom, rgba(239, 138, 138, 0.9), rgba(238, 215, 135, 0.9));
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    opacity: 0;
+    -webkit-box-shadow: 10px 10px #95e1d3;
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.our-team_cards-submenu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 56px;
+    width: 240px;
+    margin: 50% auto;
+}
+
+.our-team_cards-link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+}
+
+.social-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.our-team_cards-item:hover .our-team_cards-submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-transform: translate(-10px, -9px);
+    -ms-transform: translate(-10px, -9px);
+    transform: translate(-10px, -9px);
+    -webkit-box-shadow: #95e1d3 10px;
+    box-shadow: #95e1d3 10px;
+    cursor: pointer;
+}
+
+.our-team_cards-link:hover {
+    background: #95e1d3;
+}
+
+
+/* PAGE FOOTER */
+
+.page-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.page-footer_information {
+    color: #333333;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.page-footer_information-link {
+    text-decoration: none;
+    color: #f38181;
+}
+
+.page-footer_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.user-mail {
+    display: block;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.page-footer_button {
+    display: block;
+    outline: none;
+    width: 150px;
+    height: 44px;
+    border: none;
+    background-color: #95e1d3;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
 }
