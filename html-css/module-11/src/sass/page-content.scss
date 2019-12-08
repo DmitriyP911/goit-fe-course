@@ -1,0 +1,38 @@
+.page-content {
+    width: 1200px;
+    margin: 0 auto;
+    &_first-title {
+        text-align: center;
+    }
+    &_second-title {
+        text-align: center;
+    }
+}
+
+.page-content-services {
+    margin: 0 auto;
+    &_items {
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    &_items li {
+        display: flex;
+        width: 382px;
+    }
+    &_items div {
+        padding-left: 20px;
+    }
+    &_items h5 {
+        text-transform: uppercase;
+    }
+}
+
+.page-content-services_items-img {
+    margin-top: 24px;
+    width: 32px;
+    height: 32px;
+}

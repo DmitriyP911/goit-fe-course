@@ -1,0 +1,104 @@
+%header-fonts-set {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.page-header {
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/Layer_15.png);
+    background-size: cover;
+    &_first-title {
+        margin-top: 164px;
+        text-align: center;
+        @extend %header-fonts-set;
+        font-size: 72px;
+        font-weight: 400;
+        font-family: url(../fonts/kaushan-script/kaushan-script-v8-latin-regular.woff2);
+    }
+    &_second-title {
+        margin-top: 42px;
+        text-align: center;
+        @extend %header-fonts-set;
+        font-weight: 700;
+        font-size: 150px;
+        max-width: 810px;
+        margin: 42px auto 0;
+    }
+    &_button {
+        margin-top: 124px;
+        padding-bottom: 230px;
+        text-align: center;
+    }
+    &_button button {
+        color: white;
+        padding: 15px 32px 14px 33px;
+        background: transparent;
+        outline: none;
+        border: 2px solid white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.main-navigation {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &_items {
+        display: flex;
+        list-style: none;
+        font-size: 14px;
+        @extend %header-fonts-set;
+    }
+    &_items li {
+        margin-left: 25px;
+    }
+    &_items a {
+        @extend %header-fonts-set;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 10px;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: #fce38a;
+        }
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: #fce38a;
+            transition: width .5s ease-in-out, left .5s ease-in-out;
+            left: 50%;
+            bottom: 0;
+        }
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: #fce38a;
+            transition: width .5s ease-in-out;
+            left: 50%;
+            bottom: 0;
+        }
+        &:hover::before {
+            color: #fce38a;
+            width: 50%;
+            left: 0;
+        }
+        &:hover::after {
+            color: #fce38a;
+            width: 50%;
+        }
+    }
+}
+
+.main-navigation a {
+    text-decoration: none;
+    margin: auto 0;
+}
