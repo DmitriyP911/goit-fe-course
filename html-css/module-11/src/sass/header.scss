@@ -6,23 +6,25 @@
 
 .page-header {
     width: 100%;
-    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/Layer_15.png);
+    background-image: linear-gradient( to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/Layer_15.png);
     background-size: cover;
     &_first-title {
         margin-top: 164px;
         text-align: center;
         @extend %header-fonts-set;
+        text-transform: none;
         font-size: 72px;
         font-weight: 400;
-        font-family: url(../fonts/kaushan-script/kaushan-script-v8-latin-regular.woff2);
+        font-family: 'Kaushan Script';
     }
     &_second-title {
         margin-top: 42px;
         text-align: center;
         @extend %header-fonts-set;
+        font-family: 'Montserrat';
         font-weight: 700;
         font-size: 150px;
-        max-width: 810px;
+        max-width: 840px;
         margin: 42px auto 0;
     }
     &_button {
@@ -37,8 +39,18 @@
         outline: none;
         border: 2px solid white;
         text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;
         cursor: pointer;
     }
+}
+
+.site-logo {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .main-navigation {
@@ -51,6 +63,7 @@
         list-style: none;
         font-size: 14px;
         @extend %header-fonts-set;
+        font-family: 'Montserrat';
     }
     &_items li {
         margin-left: 25px;
@@ -60,29 +73,29 @@
         text-decoration: none;
         position: relative;
         padding-bottom: 10px;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         &:hover {
             color: #fce38a;
         }
         &::before {
             display: block;
             position: absolute;
-            content: "";
+            content: '';
             height: 2px;
             width: 0;
             background-color: #fce38a;
-            transition: width .5s ease-in-out, left .5s ease-in-out;
+            transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
             left: 50%;
             bottom: 0;
         }
         &::after {
             display: block;
             position: absolute;
-            content: "";
+            content: '';
             height: 2px;
             width: 0;
             background-color: #fce38a;
-            transition: width .5s ease-in-out;
+            transition: width 0.5s ease-in-out;
             left: 50%;
             bottom: 0;
         }
